@@ -25,4 +25,8 @@ app.use(user)
 app.use(business)
 app.use(businessPost)
 
+app.get('/', (req,res)=> {
+    res.send('welcome to citiwide')
+}
+)
 app.listen(PORT, ()=>console.log(`server has started on port ${PORT}`));
